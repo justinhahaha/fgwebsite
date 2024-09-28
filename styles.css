@@ -1,0 +1,712 @@
+body {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+    overflow-x: hidden; 
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #f8f9fa; 
+    border-bottom: 2px solid #e0e0e0; 
+}
+
+#logo {
+    max-height: 60px; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; 
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #000000; 
+    color: white; 
+    border-radius: 5px;
+}
+
+#home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#home-content h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2));
+    padding: 20px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+    font-weight: 700;
+    letter-spacing: 2px; 
+    transition: all 0.3s ease-in-out; 
+}
+
+
+
+
+.about-text-box {
+    background-color: #f0f4f8; 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 700px;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+}
+
+.about-text-box p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify; 
+}
+
+.about-text-box .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #004080; 
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    text-align: center; 
+}
+
+.about-text-box .btn:hover {
+    background-color: #003060; 
+}
+
+section {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#services {
+    background-color: #f9fafc; 
+    padding: 60px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    color: #000000; 
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap; 
+}
+
+.service {
+    text-align: center;
+    text-decoration: none;
+    max-width: 250px; 
+}
+
+.service img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; 
+}
+
+.service h3 {
+    font-size: 1.4rem;
+    color: #000000;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.service p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.service:hover img {
+    transform: scale(1.1); 
+}
+
+.service:hover h3 {
+    color: #003060; 
+}
+
+.request-quote {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem; /* Ensure the same font size */
+    font-family: 'Rubik', sans-serif; /* Ensure the same font family */
+    font-weight: 500; /* Match the font weight */
+    line-height: 1.6; /* Same line height for consistency */
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.request-quote:hover {
+    background-color: #434547;
+}
+
+
+
+
+
+section h2 {
+    font-size: 2.5rem;
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.about-text {
+    color: rgb(0, 0, 0);
+    flex: 2;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+    text-align: right;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px; 
+}
+
+#read-more {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+#read-more:hover {
+    background-color: #434547;
+}
+
+#trusted-by {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #efefef;
+}
+
+#trusted-by h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.trusted-logos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 20px; 
+    justify-items: center; 
+    padding: 20px;
+}
+
+.trusted-logos img {
+    max-width: 150px; 
+    max-height: 80px; 
+    width: auto;
+    height: auto;
+    object-fit: contain; 
+    transition: transform 0.3s ease;
+}
+
+.trusted-logos img:hover {
+    transform: scale(1.1); 
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%; 
+    padding: 20px;
+}
+
+.carousel-track {
+    white-space: nowrap; /* Prevent wrapping */
+    display: flex;
+    animation: scroll 20s linear infinite; 
+}
+
+.carousel-track img {
+    max-width: 150px; 
+    max-height: 100px;
+    margin: 0 15px;
+    object-fit: contain;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Footer Styling */
+footer {
+    background-color: #002f6c;
+    padding: 40px 20px;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; /* Makes footer responsive */
+}
+
+.footer-left, 
+.footer-middle, 
+.footer-right, 
+.footer-map {
+    flex: 1;
+    min-width: 250px; /* Ensures content wraps on smaller screens */
+    margin-bottom: 20px;
+    text-align: center; /* Center-align content */
+}
+
+.footer-left {
+    max-width: 250px;
+}
+
+.footer-tagline {
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-mission {
+    font-size: 13px;
+    font-style: italic;
+    color: #cccccc;
+    text-align: center; /* Center-align mission text */
+}
+
+.footer-middle h2, 
+.footer-right h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center; /* Center-align headings */
+}
+
+.footer-middle p, 
+.footer-right p {
+    margin-bottom: 8px;
+    text-align: center; /* Center-align the paragraphs */
+}
+
+.footer-middle p a {
+    color: #66bfff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-middle p a:hover {
+    color: #a3d4ff;
+}
+
+/* Map Styling */
+.map-container {
+    margin-top: 10px;
+    border: 2px solid #0056b3;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center; /* Center-align the map */
+}
+
+.footer-map iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 12px;
+    color: #999999;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center; /* Center-align everything on small screens */
+    }
+
+    .footer-left, .footer-middle, .footer-right, .footer-map {
+        margin-bottom: 20px;
+        text-align: center; /* Ensure all sections are centered on small screens */
+    }
+}
+
+
+
+
+
+
+#aboutus-banner {
+    position: relative; /* Positioning context for the text */
+    height: 80vh; /* Half the viewport height */
+    overflow: hidden; /* Ensures content doesn't overflow */
+    text-align: center; /* Center align text */
+}
+
+.aboutus-image {
+    width: 100%; /* Image takes full width */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 100%; /* Ensure the image does not exceed the container */
+    position: absolute; /* Position image behind text */
+    top: 0; /* Align to top */
+    left: 0; /* Align to left */
+    object-fit: cover; /* Cover the space without distortion */
+}
+
+.aboutus-text {
+    position: absolute; /* Position text over the image */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center text */
+    font-size: 2em; /* Increase font size for better visibility */
+    font-weight: 700; /* Make text bold */
+    color: #FFFFFF; /* Text color - white for contrast */
+    padding: 15px 30px; /* Add some padding */
+    text-transform: uppercase; /* Make text uppercase */
+}
+
+/* Styles specific to aboutus.html */
+#aboutus-content-unique {
+    max-width: 800px; /* Limit the width for better readability */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center align text */
+}
+
+.about-section-unique {
+    margin-bottom: 30px; /* Space between sections */
+    padding: 0; /* Remove padding */
+    border: none; /* Ensure no border is applied */
+    background: transparent; /* Ensure background is transparent */
+}
+
+.about-heading {
+    font-size: 1.8em; /* Adjust heading size */
+    margin-bottom: 15px; /* Space below headings */
+    color: #333; /* Heading color */
+}
+
+.about-paragraph {
+    font-size: 1em; /* Font size for paragraphs */
+    color: #555; /* Text color for paragraphs */
+    max-width: 600px; /* Optionally limit width of paragraph text */
+    margin: 0 auto; /* Center the paragraph text */
+    text-align: justify; /* Justify text */
+}
+
+.vision-box, .mission-box {
+    border: 1px solid #ddd; /* Border for the boxes */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the boxes */
+    margin-bottom: 20px; /* Space between boxes */
+    background-color: #f9f9f9; /* Light background color */
+    max-width: 600px; /* Limit the width of the boxes */
+    margin-left: auto; /* Center the box */
+    margin-right: auto; /* Center the box */
+}
+
+.vision-box p, .mission-box ul {
+    max-width: 100%; /* Allow full width within the box */
+    text-align: justify; /* Justify the text */
+}
+
+
+
+
+
+#contact {
+    padding: 30px;
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 22px;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#contact p {
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.contact-form label {
+    display: none; /* You can display them if needed */
+}
+
+.contact-form input,
+.contact-form textarea {
+    font-family: inherit;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+}
+
+textarea {
+    grid-column: 1 / span 2;
+    resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* This centers the button horizontally */
+    align-items: center; /* This centers the button vertically, but you can remove if not needed */
+}
+
+.request-quote-btn {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    line-height: 1.6;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.request-quote-btn:hover {
+    background-color: #434547;
+}
+
+
+
+
+/* Services Page Styles */
+#services-page-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.services-page-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #2c3e50;
+}
+
+.services-page-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #e1e1e1;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.services-page-subtitle {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #34495e;
+}
+
+.services-page-section .service-description {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555555;
+}
+
+.services-page-section .service-description strong {
+    color: #2980b9;
+}
+
+
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .services-container {
+        gap: 20px;
+    }
+
+    #home-content h1 {
+        font-size: 3rem;
+        padding: 15px 30px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .about-text-box {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    #home-content {
+        padding: 0 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .services-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    #home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-text-box {
+        max-width: 500px;
+    }
+
+    .service {
+        max-width: 300px;
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 5px 10px;
+    }
+
+    #home-content h1 {
+        font-size: 2rem;
+        padding: 10px 20px;
+    }
+
+    .services-container {
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 10px;
+    }
+
+    .about-text-box {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    .services-page-title {
+        font-size: 28px;
+    }
+
+    .services-page-subtitle {
+        font-size: 24px;
+    }
+}
